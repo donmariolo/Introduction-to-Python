@@ -1,0 +1,2 @@
+Numero de parametros = 3
+ERROR: el fichero de entrada no existe
