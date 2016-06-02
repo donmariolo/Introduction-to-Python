@@ -35,14 +35,3 @@ if __name__ == "__main__":
     screen = Form()
     screen.show()
     sys.exit(app.exec_())
-    
-    """
-    Modi
-car la funcion sayHi para que veri
-que el contenido del
-campo editable (el metodo text() devuelve el texto
-introducido). Si el campo de texto esta vaco, lanzar un
-mensaje de aviso (QMessageBox.warning), si contiene algo de
-texto lanzar el mensaje de informacion 'Hola' seguido del texto
-introducido.
-"""
