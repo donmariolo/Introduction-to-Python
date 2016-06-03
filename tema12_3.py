@@ -12,7 +12,7 @@ La salida de ese programa no se imprimirá por pantalla, sino que se guardará e
 
 import subprocess
 
-subprocess.call("python tema12.1.py in.txt out.txt")
+subprocess.call("python tema12_1.py files\\in.txt files\\out.txt")
 
 #Si queremos redirigir la salida por consola al fichero salida.txt
 #==============================================================================

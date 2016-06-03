@@ -27,7 +27,7 @@ Script que recorra el directorio de instalación de winpython y saque por pantal
 
 import os
 
-path = "E:\\WinPython-64bit-3.4.4.2"
+path = "E:\\WinPython-64bit-3.4.4.2Qt5"
 
 print ("En el directorio '{}' podemos encontrar los siguientes ejecutables:".format(path))
 for i in os.walk(path):

@@ -40,7 +40,8 @@ class Cuenta:
 
 if __name__ == "__main__":
     print("Clase Cuenta")
-    pin = int(input("Dame el numero PIN: "))
+    #pin = int(input("Dame el numero PIN: "))
+    pin = 3210
     cuenta = Cuenta()
     cuenta.mostrar(pin)
     for i in [125.23, 503.4, 50]:
@@ -75,7 +76,7 @@ class Fichero:
   
 if __name__ == "__main__":
     print("Clase Fichero")
-    fichero = Fichero("out.txt")
+    fichero = Fichero("files\\out.txt")
     fichero.leer_fichero()
     fichero.mostrar_fichero()
 
@@ -103,7 +104,7 @@ class Persona:
 if __name__ == "__main__":
     print("Clase Persona")
     lista_personas = []        
-    fin = open("personas.txt","r")
+    fin = open("files\\personas.txt","r")
     for i in fin.readlines():
         if not i == "\n": #if line.strip():
             p = i.split(";")

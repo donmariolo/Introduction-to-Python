@@ -1,1 +1,1 @@
-En el fichero in.txt se han encontrado 13 espacios en blanco.
+En el fichero files\in.txt se han encontrado 13 espacios en blanco.

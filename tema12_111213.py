@@ -17,7 +17,7 @@ import os
 
 path = "C:\\Windows\\System32"
 try:
-    fd = open("listado_windows.txt","w")
+    fd = open("files\\listado_windows.txt","w")
     for i in os.walk(path):
         for j in i[2]:
             fd.write("{};{}\n".format(os.path.join(i[0],j),os.path.getsize(os.path.join(i[0],j))))
@@ -25,7 +25,7 @@ try:
 except OSError:
     print("Problema con el acceso a ficheros")
     
-fd = open("listado_windows.txt","r")
+fd = open("files\\listado_windows.txt","r")
 lista_nombres_fichero = []
 for linea in fd:
     elementos = linea.split(';')

@@ -22,7 +22,7 @@ if __name__ == '__main__':
         sys.exit(1)
     else:
         try:
-            fi = open(sys.argv[1],"r")
+            fi = open("files\\"+sys.argv[1],"r")
             cont = 0
             for i in fi:
                 cont += i.count(" ")
@@ -31,7 +31,7 @@ if __name__ == '__main__':
             print("ERROR: el fichero de entrada no existe")    
             sys.exit(2)
         try:
-            fo = open(sys.argv[2],"w")
+            fo = open("files\\"+sys.argv[2],"w")
             fo.write("En el fichero {} se han encontrado {} espacios en blanco.".format(sys.argv[1],cont))
             fo.close()
         except:

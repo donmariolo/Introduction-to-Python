@@ -52,13 +52,13 @@ class Buscador(Fichero):
         return os.path.getsize(self.ruta)<os.path.getsize(other)
         
 if __name__ == '__main__':
-    fich1 = Fichero("out.txt")
-    fich2 = Fichero("con_comentarios.txt")
+    fich1 = Fichero("files\\out.txt")
+    fich2 = Fichero("files\\con_comentarios.txt")
     
-    buscador = Buscador("out.txt")
+    buscador = Buscador("files\\out.txt")
     buscador.leer_fichero()
     print("Numero de ocurrencias de 'en': {}".format(buscador.buscar("en")))
     buscador.reemplazar("en","ne")
-    buscador.escribir("out2.txt")    
+    buscador.escribir("files\\out2.txt")    
     
     #print(fich1 < fich2)

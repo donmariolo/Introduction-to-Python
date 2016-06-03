@@ -17,14 +17,14 @@ fout.write(numeros)
 fout.close()
 
 #A~nadir la linea [1, 2 ... 10]
-fout = open("other.txt", "a")
+fout = open("files\\other.txt", "a")
 numbers = [str(num) for num in list(range(1, 11))]
 line = "\t".join(numbers)
 fout.write(line + "\n")
 fout.close()
 
 #El producto de los numeros de la ultima linea
-fout = open("other.txt", "r")
+fout = open("files\\other.txt", "r")
 lines = fout.readlines()
 prod = 1
 lastline = lines[len(lines)-1]
@@ -35,7 +35,7 @@ fout.close()
 
 #El numero de lneas de "con comentarios" si ignoramos aquellas comentadas 
 #(las que empiezan por #)
-fd = open("con_comentarios.txt", "r")
+fd = open("files\\con_comentarios.txt", "r")
 commentlines = 0
 for l in fd:
     if not l.startswith("#"):
@@ -44,7 +44,7 @@ print ("El total de lineas con comentarios es: {}".format(commentlines))
 fd.close()
 
 #La suma de todos los numeros impares del documento
-fd = open("con_comentarios.txt", "r")
+fd = open("files\\con_comentarios.txt", "r")
 sumaimpares = 0
 for li in fd:
     if not li.startswith("#"):

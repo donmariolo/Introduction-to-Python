@@ -33,7 +33,7 @@ def existe_fichero(path):
     except IOError:
         return False
 #MAIN
-path = "E:\\zone\\workspace\\python\\"
+path = "E:\\zone\\workspace\\python\\files\\"
 lista_ficheros = [path+"ejercicio1.py", path+"ejercicio2.py", path+"ejercicio3.py", path+"tema10.py"]
 for i in lista_ficheros:
     if existe_fichero:
